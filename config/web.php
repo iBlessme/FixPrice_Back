@@ -50,12 +50,9 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                // API правила для вакансий
                 'GET api/vacancy' => 'vacancy/index',
                 'GET api/vacancy/<id:\d+>' => 'vacancy/view',
                 'POST api/vacancy' => 'vacancy/create',
-                'PUT api/vacancy/<id:\d+>' => 'vacancy/update',
-                'DELETE api/vacancy/<id:\d+>' => 'vacancy/delete',
                 'OPTIONS api/vacancy' => 'vacancy/options',
                 'OPTIONS api/vacancy/<id:\d+>' => 'vacancy/options',
             ],
